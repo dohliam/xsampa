@@ -1,0 +1,65 @@
+body, html{
+  font-family: 'Open Sans', sans-serif;
+}
+.h1 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5em;
+  color: gray;
+  font-weight: 700;
+  margin: 5px;
+}
+.tbox	{
+  background: #fbfbfb;
+  border: 1px solid #dfdfdf;
+}
+hr {
+  color: #efefef;
+  border: none;
+  height: 1px;
+  background-color: #efefef;
+}
+.hd {
+  height: 10%;
+  border-bottom: 1px solid #efefef;
+  padding: 0.5em 1em;
+  overflow: hidden;
+}
+.hd .nav {
+  float: right;
+}
+.hd .logo {
+  margin: 0 0.2em 0 0.4em;
+  position: relative;
+  top: 4px;
+}
+#inputdiv {
+  height: 15%;
+  text-align: center;
+}
+#txtdiv {
+  height: 30%;
+  text-align: center;
+}
+#htmldiv {
+  height: 30%;
+  text-align: center;
+}
+#textbox {
+  font-size: 1em;
+  width: 40%;
+  height: 50%;
+}
+#outbox {
+  font-size: 2em;
+  width: 40%;
+  height: 60%;
+}
+#htmlout {
+  font-size: 2em;
+/*   color: #719ECE; */
+  color: #9D9DFF;
+}
