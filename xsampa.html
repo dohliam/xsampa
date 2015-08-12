@@ -43,12 +43,27 @@
         htmlout.innerHTML = input.value.replace(/\n/g, "<br>");
       }
 
+      function legend() {
+        xsort = xsIn.slice(0).sort();
+        ltext = document.getElementById("ltext");
+
+        txt = "";
+        ltext.innerHTML = "";
+        for (t in xsort) {
+          i = xsIn.indexOf(xsort[t]);
+          txt = txt + "<div class='gr'>" + xsIn[i] + "</div> → <div class='pr'>" + ipaOut[i] + "</div><br>";
+        }
+        var output = document.getElementById("outbox");
+        ltext.innerHTML = txt;
+
+      }
+
     </script>
 
   </head>
 
   <body OnLoad="document.input.textbox.focus(); geturl(); ipa();">
-
+<div id="container">
     <header class="hd">
       <span class="h1"><a href="/"><img class="logo" src="logo.png" style="width: 55px"></a>X-SAMPA to IPA Converter</span>
     </header>
@@ -57,22 +72,32 @@
     <h2>Input</h2>
 
     <form name="input">
-      <textarea name="textbox" class="tbox" spellcheck="false" id="textbox" onkeyup="ipa()">[vIZ@n]</textarea></form>
+      <textarea name="textbox" class="tbox" spellcheck="false" id="textbox" accesskey='i' onkeyup="ipa()">[vIZ@n]</textarea></form>
 </div>
 
 <div id="txtdiv">
     <h2>Text Output</h2>
     <form name="output">
-      <textarea name="outbox" class="tbox" spellcheck="false" id="outbox"></textarea></form>
+      <textarea name="outbox" class="tbox" spellcheck="false" id="outbox" accesskey='o'></textarea></form>
 </div>
 
-    <hr>
+<div id="legend">
+  <div class="tooltip" onmouseover="legend()">
+    <h3>X-Sampa guide</h3>
+    <span>
+        <strong>X-SAMPA to IPA conversion guide</strong><br />
+        <div id="ltext">&nbsp;</div>
+    </span>
+  </div>
+</div>
 
 <div id="htmldiv">
+    <hr>
     <h2>HTML Output</h2>
 
     <div id="htmlout"></div>
 
+</div>
 </div>
   </body>
 </html>

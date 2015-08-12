@@ -1,6 +1,13 @@
 body, html{
   font-family: 'Open Sans', sans-serif;
 }
+#container {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
 .h1 {
   font-size: 2em;
   color: #333;
@@ -23,9 +30,10 @@ hr {
   background-color: #efefef;
 }
 .hd {
+  position: relative;
   height: 10%;
   border-bottom: 1px solid #efefef;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 0;
   overflow: hidden;
 }
 .hd .nav {
@@ -37,29 +45,84 @@ hr {
   top: 4px;
 }
 #inputdiv {
+  position: relative;
   height: 15%;
   text-align: center;
 }
 #txtdiv {
+  position: relative;
   height: 30%;
   text-align: center;
 }
 #htmldiv {
+  position: relative;
   height: 30%;
   text-align: center;
 }
 #textbox {
   font-size: 1em;
   width: 40%;
-  height: 50%;
+  height: 60%;
 }
 #outbox {
   font-size: 2em;
   width: 40%;
-  height: 60%;
+  height: 70%;
 }
 #htmlout {
   font-size: 2em;
 /*   color: #719ECE; */
+  color: #9D9DFF;
+}
+#legend {
+  text-align: center;
+}
+.pr {
+  color: #9D9DFF;
+  display: inline;
+}
+.gr {
+  color: #808080;
+  display: inline;
+}
+.tooltip {
+  outline: none;
+}
+.tooltip strong {
+  line-height:30px;
+}
+.tooltip span {
+  z-index:10;
+  display:none;
+  padding:14px 20px;
+  margin-top:-30px;
+  margin-left:28px;
+  height:30%;
+  line-height:16px;
+}
+.tooltip:hover span{
+  display:inline;
+  position:absolute;
+  color:#111;
+  border:1px solid #DCA;
+  background:#fffAF0;
+  overflow-y: scroll;
+}
+.tooltip span
+{
+  border-radius:4px;
+  box-shadow: 5px 5px 8px #CCC;
+}
+h3 {
+  color: gray;
+  border: thin solid gray;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+.xs {
+  color: #808080;
+}
+.ipa {
   color: #9D9DFF;
 }
