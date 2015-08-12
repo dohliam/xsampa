@@ -63,41 +63,42 @@
   </head>
 
   <body OnLoad="document.input.textbox.focus(); geturl(); ipa();">
-<div id="container">
-    <header class="hd">
-      <span class="h1"><a href="/"><img class="logo" src="logo.png" style="width: 55px"></a>X-SAMPA to IPA Converter</span>
-    </header>
+    <div id="container">
+      <header class="hd">
+        <span class="h1"><a href="/"><img class="logo" src="logo.png" style="width: 55px"></a>X-SAMPA to IPA Converter</span>
+      </header>
 
-<div id="inputdiv">
-    <h2>Input</h2>
+      <div id="inputdiv">
+        <h2>Input</h2>
 
-    <form name="input">
-      <textarea name="textbox" class="tbox" spellcheck="false" id="textbox" accesskey='i' onkeyup="ipa()">[vIZ@n]</textarea></form>
-</div>
+        <form name="input">
+          <textarea name="textbox" class="tbox" spellcheck="false" id="textbox" accesskey='i' onkeyup="ipa()">[vIZ@n]</textarea></form>
+      </div>
 
-<div id="txtdiv">
-    <h2>Text Output</h2>
-    <form name="output">
-      <textarea name="outbox" class="tbox" spellcheck="false" id="outbox" accesskey='o'></textarea></form>
-</div>
+      <div id="txtdiv">
+        <h2>Text Output</h2>
+        <form name="output">
+          <textarea name="outbox" class="tbox" spellcheck="false" id="outbox" accesskey='o'></textarea>
+        </form>
+      </div>
 
-<div id="legend">
-  <div class="tooltip" onmouseover="legend()">
-    <h3>X-Sampa guide</h3>
-    <span>
-        <strong>X-SAMPA to IPA conversion guide</strong><br />
-        <div id="ltext">&nbsp;</div>
-    </span>
-  </div>
-</div>
+      <div id="legend">
+        <div class="tooltip" onmouseover="legend()">
+          <h3>X-Sampa guide</h3>
+          <span>
+            <strong>X-SAMPA to IPA conversion guide</strong><br />
+            <div id="ltext">&nbsp;</div>
+          </span>
+        </div>
+      </div>
 
-<div id="htmldiv">
-    <hr>
-    <h2>HTML Output</h2>
+      <div id="htmldiv">
+        <hr>
+        <h2>HTML Output</h2>
 
-    <div id="htmlout"></div>
+        <div id="htmlout"></div>
 
-</div>
-</div>
+      </div>
+    </div>
   </body>
 </html>
