@@ -15,9 +15,10 @@
   </head>
 
   <body OnLoad="document.input.textbox.focus(); geturl(); ipa();">
+    <center>
     <div id="container">
       <header class="hd">
-        <span class="h1"><a href="/"><img class="logo" src="logo.png" style="width: 55px"></a>X-SAMPA to IPA Converter</span>
+        <h1><a href="/"><img class="logo" src="logo.png" style="width: 55px"></a>X-SAMPA to IPA Converter</h1>
       </header>
 
       <div id="inputdiv">
@@ -35,17 +36,18 @@
       </div>
 
       <div id="legend">
-        <div class="tooltip" onmouseover="legend()">
-          <h3>X-Sampa guide</h3>
-          <span>
-            <strong>X-SAMPA to IPA conversion guide</strong><br />
-            <div id="ltext">&nbsp;</div>
-          </span>
+        <div class="tooltip" onclick="toggleLegend()">
+          <center>
+            <h3>X-Sampa guide</h3>
+            <span class="legend-box">
+              <h4 class="tooltip-header">X-SAMPA to IPA conversion guide</h4>
+              <div id="ltext">&nbsp;</div>
+            </span>
+          </center>
         </div>
       </div>
 
       <div id="htmldiv">
-        <hr>
         <h2>HTML Output</h2>
 
         <div id="htmlout"></div>
@@ -59,5 +61,6 @@
         </a>
       </span>
     </footer>
+    </center>
   </body>
 </html>

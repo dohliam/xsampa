@@ -1,7 +1,7 @@
 body, html{
   font-family: 'Open Sans', sans-serif;
 }
-.h1 {
+h1 {
   font-size: 2em;
   color: #333;
   font-weight: 700;
@@ -18,21 +18,8 @@ h2 {
   border-radius: 5px;
   -moz-border-radius: 4px;
 }
-hr {
-  color: #efefef;
-  border: none;
-  height: 1px;
-  background-color: #efefef;
-}
 .hd {
-  position: relative;
-  height: 10%;
-  border-bottom: 1px solid #efefef;
   padding: 0.5em 1em 0;
-  overflow: hidden;
-}
-.hd .nav {
-  float: right;
 }
 .hd .logo {
   margin: 0 0.2em 0 0.4em;
@@ -48,6 +35,7 @@ hr {
   position: relative;
   height: 30%;
   text-align: center;
+  margin-top: 1.5rem;
 }
 #htmldiv {
   position: relative;
@@ -73,39 +61,43 @@ hr {
 }
 .pr {
   color: #9D9DFF;
-  display: inline;
+  text-align: center;
 }
 .gr {
   color: #808080;
-  display: inline;
+  text-align: center;
+  font-family: monospace;
+  color: red;
 }
 .tooltip {
-  outline: none;
+  cursor: pointer;
 }
-.tooltip strong {
-  line-height:30px;
-}
-.tooltip span {
-  z-index:10;
-  display:none;
+.legend-box {
+  display: none;
   padding:14px 20px;
   margin-top:-30px;
   margin-left:28px;
   height:30%;
-  line-height:16px;
-}
-.tooltip:hover span{
-  display:inline;
   position:absolute;
   color:#111;
   border:1px solid #DCA;
   background:#fffAF0;
   overflow-y: scroll;
 }
-.tooltip span
-{
+.tooltip span {
   border-radius:4px;
   box-shadow: 5px 5px 8px #CCC;
+}
+.tooltip table, th, td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+.tooltip td {
+  font-size: x-large;
+}
+.tooltip th {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 h3 {
   color: gray;
@@ -124,6 +116,7 @@ h3 {
   width: 16px;
 }
 footer {
+  margin-top: 1.5rem;
   text-align: center;
 }
 .source-link {
