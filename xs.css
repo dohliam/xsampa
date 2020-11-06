@@ -128,3 +128,6 @@ h3 {
 .ipa {
   color: #9D9DFF;
 }
+textarea {
+  font-family: inherit;
+}
