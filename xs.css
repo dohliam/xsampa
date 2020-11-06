@@ -1,13 +1,6 @@
 body, html{
   font-family: 'Open Sans', sans-serif;
 }
-#container {
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-}
 .h1 {
   font-size: 2em;
   color: #333;
@@ -73,7 +66,6 @@ hr {
 }
 #htmlout {
   font-size: 2em;
-/*   color: #719ECE; */
   color: #9D9DFF;
 }
 #legend {
@@ -127,6 +119,16 @@ h3 {
 }
 .ipa {
   color: #9D9DFF;
+}
+.icon {
+  width: 16px;
+}
+footer {
+  text-align: center;
+}
+.source-link {
+  text-decoration: none;
+  color: darkgray;
 }
 textarea {
   font-family: inherit;
