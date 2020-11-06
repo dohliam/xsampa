@@ -11,7 +11,7 @@
 
 Xsampa.js converts [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA) text into equivalent Unicode [IPA symbols](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet). It has no dependencies and should work in any browser with JavaScript enabled. It is designed to work locally and does not require access to a command-line or an internet connection. It also has a [handy API](#api) allowing you to get arbitrary IPA text by linking directly to an X-SAMPA string in the URL.
 
-The main purpose of xsampa.js is to allow easy input of IPA without the need to install any special software, input methods, or command-line tools, and in circumstances where it may not be possible to get online.
+The main purpose of xsampa.js is to allow easy input of IPA without the need to install any special software, input methods, or command-line tools, and in circumstances where it may not be possible to get online. It also makes it easy to input IPA on mobile devices like phones where this would otherwise be difficult without special software.
 
 ## Usage
 
