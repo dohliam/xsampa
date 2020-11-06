@@ -51,12 +51,13 @@ function genLegend() {
   xsort = xsIn.slice(0).sort();
   ltext = document.getElementById("ltext");
 
-  txt = "";
+  txt = "<table><tr><th>X-Sampa</th><th>IPA</th></tr>";
   ltext.innerHTML = "";
   for (t in xsort) {
     i = xsIn.indexOf(xsort[t]);
-    txt = txt + "<div class='gr'>" + xsIn[i] + "</div> → <div class='pr'>" + ipaOut[i] + "</div><br>";
+    xsEsc = xsIn[i].replace(/</, "&lt;").replace(/>/, "&gt;");
+    txt = txt + "<tr><td class='gr'>" + xsEsc + "</td><td class='pr'>" + ipaOut[i] + "</td></tr>";
   }
   var output = document.getElementById("outbox");
-  ltext.innerHTML = txt;
+  ltext.innerHTML = txt + "</table>";
 }
