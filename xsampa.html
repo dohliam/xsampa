@@ -9,55 +9,6 @@
 
     <script src="conv.js"></script>
     <script type="text/javascript">
-      function ipa() {
-
-//         https://stackoverflow.com/questions/3561493/is-there-a-regexp-escape-function-in-javascript/3561711#3561711
-        RegExp.escape = function(s) {
-          return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-        };
-
-        var output = document.getElementById("outbox");
-        var input = document.getElementById("textbox");
-
-        output.value = input.value;
-
-        for (t in xsIn) {
-          var re = new RegExp(RegExp.escape(xsIn[t]), "g");
-          output.value = output.value.replace(re, ipaOut[t]);
-        }
-        htmlOut();
-      }
-
-      function geturl() {
-        var url = location.href;
-        if (/\?/.test(url) == true) {
-          var args = /\?(.*)/.exec(url)[1];
-          args=/\+/.test(args) ? args.replace(/\+/g,' ') : args;
-          var input = document.getElementById("textbox");
-          input.value = decodeURIComponent(args);
-        }
-      }
-
-      function htmlOut() {
-        var htmlout = document.getElementById("htmlout");
-        var input = document.getElementById("outbox");
-        htmlout.innerHTML = input.value.replace(/\n/g, "<br>");
-      }
-
-      function legend() {
-        xsort = xsIn.slice(0).sort();
-        ltext = document.getElementById("ltext");
-
-        txt = "";
-        ltext.innerHTML = "";
-        for (t in xsort) {
-          i = xsIn.indexOf(xsort[t]);
-          txt = txt + "<div class='gr'>" + xsIn[i] + "</div> → <div class='pr'>" + ipaOut[i] + "</div><br>";
-        }
-        var output = document.getElementById("outbox");
-        ltext.innerHTML = txt;
-
-      }
 
     </script>
 
