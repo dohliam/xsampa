@@ -34,7 +34,20 @@ function htmlOut() {
   htmlout.innerHTML = input.value.replace(/\n/g, "<br>");
 }
 
-function legend() {
+function toggleLegend() {
+  legendBox = document.getElementsByClassName("legend-box")[0];
+  state = legendBox.style.display;
+  if (state == "") {
+    genLegend();
+    legendBox.style.display = "inline";
+  } else if (state == "none") {
+    legendBox.style.display = "inline";
+  } else {
+    legendBox.style.display = "none";
+  }
+}
+
+function genLegend() {
   xsort = xsIn.slice(0).sort();
   ltext = document.getElementById("ltext");
 
